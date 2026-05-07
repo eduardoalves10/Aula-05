@@ -1,0 +1,85 @@
+*, **::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root { /*varíaveis definidas*/
+    --cor-primaria: rgb(238, 122, 27);
+    --cor-secundaria: gray;
+    --cor-destaque: black;
+    --font-principal: arial;
+    --raio: 6px;
+    --sombra: 0 4px 12px rgba(0,0,0,.08);
+}
+
+body {
+    background: rgb(247, 244, 244);
+    font-family: var(--font-principal);
+}
+
+header {
+    background: var(--cor-primaria);
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    height: 64px;
+}
+
+header h1 {
+    font-weight: 700;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 8 16px;
+    border-radius: var(--raio);
+    font-weight: 600;
+    font-size: 1rem;
+    transition: background .2s;
+}
+
+nav a:hover {
+    background: rgba(255,255,255,.15);
+}
+
+h2 {
+    font-weight: 700;
+    padding: 2px 0 2px 10px;
+    color: var(--cor-primaria);
+}
+
+footer {
+    background: var(--cor-destaque);
+    padding: 40px;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    background: linear-gradient(135deg var(--cor-primaria), var(--cor-secundaria));
+    color: rgb(0, 0, 0);
+}
+
+.hero-texto {
+    flex: 2;
+}
+
+.hero-icone {
+  flex: 1;
+  text-align: center;
+  font-size: 6rem;
+  opacity: 1;
+}

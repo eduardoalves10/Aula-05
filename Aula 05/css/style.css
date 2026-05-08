@@ -98,6 +98,33 @@ ul li::before {
   opacity: 1;
 }
 
+.cards {
+    display: flex;
+    justify-content: space-around;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.cards-grid {
+    display: flex;
+    gap: 20px;
+}
+
+.card {
+    flex: 1 1 220px;
+    max-width: 300px;
+    background: white;
+    border-radius: var(--raio);
+    padding: 20px;
+    box-shadow: var(--sombra);
+}
+
+
+
+
+
+
+
 footer {
     background: var(--cor-destaque);
     padding: 40px;

@@ -98,6 +98,49 @@ ul li::before {
   opacity: 1;
 }
 
+.cards {
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    flex-wrap: wrap;
+}
+
+.cards-grid {
+    display: flex;
+    gap: 20px;
+}
+
+.card {
+    flex: 1 1 220px;
+    max-width: 300px;
+    background: white;
+    border-radius: var(--raio);
+    padding: 20px;
+    box-shadow: var(--sombra);
+}
+
+.layout-2col {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.layout-2col .conteudo {
+    flex: 2;
+}
+
+.layout-2col .lateral {
+    flex: 1;
+}
+
+img {
+    margin: 20px 0 0 15px;
+    border: solid 3px var(--cor-primaria);
+    border-radius: var(--raio);
+    width: 10px;
+    height: 200px;
+}
+
 footer {
     background: var(--cor-destaque);
     padding: 40px;

@@ -101,7 +101,7 @@ ul li::before {
 .cards {
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    align-items: stretch;
     flex-wrap: wrap;
 }
 
@@ -119,11 +119,27 @@ ul li::before {
     box-shadow: var(--sombra);
 }
 
+.layout-2col {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+}
 
+.layout-2col .conteudo {
+    flex: 2;
+}
 
+.layout-2col .lateral {
+    flex: 1;
+}
 
-
-
+img {
+    margin: 20px 0 0 15px;
+    border: solid 3px var(--cor-primaria);
+    border-radius: var(--raio);
+    width: 10px;
+    height: 200px;
+}
 
 footer {
     background: var(--cor-destaque);
